@@ -4,7 +4,7 @@ The aim is to maximize the interest profit from portfolio where each asset is st
 
 # How to use
 
-1. Define a dictionary of interest rate as `{bankName: ([rate(1), rate(2), ..., rate(k+1)],[bound(1), bound(2), ..., bound(k)])}` where the interest rate of the given bank is `rate(i)` for the amount of money in the interval `(bound(i-1), bound(i))` where `bound(0)` is 0.
+1. Define a dictionary of interest rate as `inputDict = {bankName: ([rate(1), rate(2), ..., rate(k+1)],[bound(1), bound(2), ..., bound(k)])}` where the interest rate of the given bank is `rate(i)` for the amount of money in the interval `(bound(i-1), bound(i))` where `bound(0)` is 0.
 For example, `inputDict = {
     'LH':([0.0025, 0.0175,0.0555,0.015,0.0025,0],[100000, 900000, 1000000, 3000000, 100000000]),
     'KPP':([0.02,0.04,0.02,0.0155,0.005],[5000,10000,50000,1500000]),
@@ -16,4 +16,7 @@ For example, `inputDict = {
     'CIMBSpeed':([0.008,0.0188],[100000]),
 }`
 
-2. 
+2. Call a function `optimize(principle,inputDict,verbose)` where `verbose=True` means that the report about how to allocate an asset is printed. This function returns an optimized Pyomo model.
+
+
+The detail of Pyomo can be found at https://www.pyomo.org/
