@@ -4,6 +4,7 @@ import maximizeInterest as MI
 import re
 
 st.header("Maximize my Portfolio")
+st.write("Motivated by the problem proposed in Facebook page \"เนิร์ดไฟแนนซ์\", it is solved by formulating to Linear Programming problem. The Python library Pyomo is the main tool of this project. This is created by Phaphontee Yamchote (my profile page: [link](https://yamchote-ppt.github.io/profile/))")
 inputDict = {
         'LH':([0.0025, 0.0175,0.0555,0.015,0.0025,0],[100000, 900000, 1000000, 3000000, 100000000]),
         'KPP':([0.02,0.04,0.02,0.0155,0.005],[5000,10000,50000,1500000]),
