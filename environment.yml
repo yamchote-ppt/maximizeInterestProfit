@@ -1,0 +1,14 @@
+name: myenv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - streamlit
+  - numpy
+  - pandas
+  - scikit-learn
+  - pip
+  - pyomo
+  - ipopt glpk
+  - pip:
+      - some_package_from_pypi
